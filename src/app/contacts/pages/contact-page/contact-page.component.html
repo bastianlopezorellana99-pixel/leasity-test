@@ -1,0 +1,12 @@
+<section class="contact-page">
+
+      <h1>Lista de contactos:</h1>
+      <app-contact-table 
+        [contacts]="contacts" 
+        (contactSelected)="onContactSelected($event)">
+      </app-contact-table>
+      <app-nav-side 
+        [isOpen]="isNavSideOpen" 
+        (close)="closeNavSide()">
+      </app-nav-side>
+  </section>

@@ -1,0 +1,95 @@
+@import '../../../../assets/styles/variables.scss';
+
+.form-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.form-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.input-separator {
+  margin-bottom: 1rem;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 100%;
+  button {
+    margin: 0.1rem;
+  }
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 0.0625rem solid $color-secundary;
+  background-color: $color-secundary;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button.selected {
+  background-color: $button-selected-bg-color;
+  color: $color-primary;
+  border-color: $button-selected-bg-color;
+}
+
+button:hover {
+  background-color: $button-hover-bg-color;
+}
+
+.error {
+  color: $error-color;
+  font-size: 0.9rem;
+  margin-top: 0.3125rem;
+}
+
+input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 0.0625rem solid $color-secundary;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: $input-bg-color;
+  color: $input-text-color;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: $input-focus-border-color;
+  background-color: $color-primary;
+  box-shadow: 0 0 0.3125rem $input-focus-shadow-color;
+}
+
+input::placeholder {
+  color: $input-placeholder-color;
+}
+
+.save-button {
+  display: block;
+  margin: 2rem 0 0;
+  padding: 0.75rem 1.5rem;
+  background-color: $button-save-background;
+  color: $button-disable;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $button-save-border;
+  }
+
+  &:disabled {
+    background-color: $button-disable-background;
+    cursor: not-allowed;
+  }
+}

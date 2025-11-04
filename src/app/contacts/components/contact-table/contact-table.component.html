@@ -1,0 +1,36 @@
+
+<div class="table-container">
+  <table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Correo</th>
+      <th>Rut</th>
+      <th>Etiquetas</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of contacts">
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.email }}</td>
+      <td>{{ contact.rut }}</td>
+      <td>
+        <div class="tags">
+          <button
+            type="button"
+            *ngFor="let tag of contact.tags"
+            class="tag-button"
+          >
+            {{ tag }}
+          </button>
+        </div>
+      </td>
+      <td class="img-td">
+          <img (click)="onSelectContact(contact.id)" src="assets/icons/edit.svg" alt="Seleccionar" class="action-icon" />
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+

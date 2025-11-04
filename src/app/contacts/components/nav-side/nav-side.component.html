@@ -1,0 +1,6 @@
+<aside class="nav-side" [class.open]="isOpen">
+  <div class="close-button">  
+    <label class="button" (click)="onClose()">x</label>
+  </div>
+  <app-form (closeForm)="onClose()"></app-form>
+  </aside>
