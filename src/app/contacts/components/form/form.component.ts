@@ -73,6 +73,7 @@ export class FormComponent implements OnInit, OnDestroy {
     if (this.contactForm.valid) {
       this.contactService.updateContact(this.contactForm.value).subscribe({
         next: () => {
+          this.signalFormService.notifyContactSaved();
           this.closeForm.emit();
         },
         error: (err) => {

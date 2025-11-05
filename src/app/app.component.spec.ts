@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'liasity'`, () => {
+  it(`should have as title 'leasity'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('liasity');
+    expect(app.title).toEqual('leasity');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('liasity app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('leasity app is running!');
   });
 });

@@ -12,7 +12,7 @@ export class ContactService {
     { id: 1, name: 'Andres Colonia', email: 'andres@leasity.cl', rut: '17.395.120-5', tags: ['backend','devops','frontend'] },
     { id: 2, name: 'Matias Betarce', email: 'matias@leasity.cl', rut: '18.545.293-k', tags: ['frontend','backend','diseño'] },
     { id: 3, name: 'Felipe Apablaza', email: 'matias@leasity.cl', rut: '18.139.018-2', tags: ['frontend','diseño'] },
-    { id: 4, name: 'Monica Kattan', email: 'momo@leasity.cl', rut: '20.155.952-1', tags: ['diseño'] },
+    { id: 4, name: 'Monica Kattan', email: 'momo@leasity.cl', rut: '19.032.332-3', tags: ['diseño'] },
   ]);
 
   getContacts(): Observable<Contact[]> {

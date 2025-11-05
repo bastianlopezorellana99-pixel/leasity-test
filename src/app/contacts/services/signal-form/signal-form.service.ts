@@ -9,7 +9,14 @@ export class SignalFormService {
   private selectedContactSubject = new BehaviorSubject<Contact | null>(null);
   selectedContact$ = this.selectedContactSubject.asObservable();
 
+  private contactSavedSubject = new BehaviorSubject<boolean>(false);
+  contactSaved$ = this.contactSavedSubject.asObservable();
+
   setSelectedContact(contact: Contact | null) {
     this.selectedContactSubject.next(contact);
+  }
+
+  notifyContactSaved() {
+    this.contactSavedSubject.next(true);
   }
 }
