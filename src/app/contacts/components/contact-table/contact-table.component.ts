@@ -16,4 +16,8 @@ export class ContactTableComponent {
     this.contactSelected.emit(id);
   }
 
+  public trackByContactId(index: number, contact: Contact): number {
+    return contact.id;
+  }
+
 }
